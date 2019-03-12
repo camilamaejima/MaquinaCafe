@@ -5,6 +5,15 @@ public class Opcao {
     private BigDecimal valor;
     private String descricao;
     private int codigo;
+    private boolean temAcucar;
+
+    public boolean getTemAcucar(){
+        return temAcucar;
+    }
+
+    public void setTemAcucar(boolean temAcucar){
+        this.temAcucar = temAcucar;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -31,7 +40,7 @@ public class Opcao {
     }
 
     public String toString(){
-        return codigo +" : " + descricao + " - " + valor;
+        return codigo +" - " + descricao + " - valor R$: " + valor;
 
     }
 
