@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class MaquinaCafe {
 
     Menu novoMenu;
-    NivelAcucar novoNivel;
     Opcao opcaoEscolhida;
 
     public MaquinaCafe(Menu novoMenu){
         this.novoMenu = novoMenu;
+    }
+
+    public void mostrarReceita(){
+        System.out.println("Modo de preparo");
     }
 
     public void mostraMenu(){
@@ -33,39 +36,43 @@ public class MaquinaCafe {
 
     }
 
-    public void mostrarNivelAcucar(){
-       if (this.opcaoEscolhida.getTemAcucar()){
+    public void alterarNivelAcucar(){
+        for(int i = 0; i< this.opcaoEscolhida.novaReceita.listaItens.size(); i++){
+            String nomeIngrediente = this.opcaoEscolhida.novaReceita.listaItens.get(i).getNomeIngrediente();
+            if(nomeIngrediente.equals("Açúcar")){
+                int novoNivel = mostrarOpcoesAcucar();
+                if(novoNivel >= 0){
+                    this.opcaoEscolhida.novaReceita.listaItens.get(i).setQuantidade(novoNivel);
+                }
+            }
+        }
+    }
 
-           System.out.print("Deseja alterar?(S/N)");
-           Scanner sc = new Scanner(System.in);
-           String respostaMudancaNivel = sc.next();
-
-           if(respostaMudancaNivel.equalsIgnoreCase("S")){
-               System.out.println("Níveis de açúcar:");
-               System.out.println("0 - Sem açúcar");
-               System.out.println("1 - Quase sem ");
-               System.out.println("2 - Quase moderado");
-               System.out.println("3 - Moderado");
-               System.out.println("4 - Mais que moderado");
-               System.out.println("5 - Bem doce");
-               System.out.println("O valor do nível de açúcar padrão é moderado.");
-               System.out.print("Escolha uma opção:");
-               int nivelEscolhido = sc.nextInt();
-               if(nivelEscolhido <0 || nivelEscolhido > 5){
-                   System.out.println("Opção inválida!");
-                   mostrarNivelAcucar();
-               }else{
-                   this.novoNivel= new NivelAcucar();
-                   this.novoNivel.nivel = nivelEscolhido;
-               }
-
-           }else if(respostaMudancaNivel.equalsIgnoreCase("N")){
-               this.novoNivel= new NivelAcucar();
-           }else{
-               System.out.println("Opção inválida!");
-               mostrarNivelAcucar();
-           }
-       }
+    public int mostrarOpcoesAcucar(){
+        int nivelEscolhido = -1;
+        System.out.println("O valor do nível de açúcar padrão é moderado.");
+        System.out.print("Deseja alterar?(S/N)");
+        Scanner sc = new Scanner(System.in);
+        String respostaMudancaNivel = sc.next();
+        if(respostaMudancaNivel.equalsIgnoreCase("S")){
+            System.out.println("Níveis de açúcar:");
+            System.out.println("0 - Sem açúcar");
+            System.out.println("1 - Quase sem ");
+            System.out.println("2 - Quase moderado");
+            System.out.println("3 - Moderado");
+            System.out.println("4 - Mais que moderado");
+            System.out.println("5 - Bem doce");
+            System.out.print("Escolha uma opção:");
+            nivelEscolhido = sc.nextInt();
+            if(nivelEscolhido <0 || nivelEscolhido > 5){
+                System.out.println("Opção inválida!");
+                mostrarOpcoesAcucar();
+            }
+        }else if(!respostaMudancaNivel.equalsIgnoreCase("N")){
+            System.out.println("Opção inválida!");
+            mostrarOpcoesAcucar();
+        }
+        return nivelEscolhido;
     }
 
     public void mostrarPreco(){
@@ -78,6 +85,7 @@ public class MaquinaCafe {
         if(opcaoEscolhida.getCodigo() != 5){
             System.out.print("Digite o valor em dinheiro para pagamento:");
             Scanner sc = new Scanner(System.in);
+
             BigDecimal valorPagamento = sc.nextBigDecimal();
 
             if(valorPagamento.compareTo(opcaoEscolhida.getValor()) < 0){
@@ -90,8 +98,10 @@ public class MaquinaCafe {
     }
 
     public void preparar(){
-        System.out.println(opcaoEscolhida.getModoPreparo());
-        System.out.println("Está pronto o seu pedido!");
+
+        System.out.println("MODO DE PREPARO");
+        opcaoEscolhida.novaReceita.toString();
+        System.out.println("Seu/Sua "+opcaoEscolhida.getDescricao()+ " está pronto(a) na xícara!");
     }
 
 }

@@ -5,23 +5,10 @@ public class Opcao {
     private BigDecimal valor;
     private String descricao;
     private int codigo;
-    private boolean temAcucar;
-    private String modoPreparo;
+    Receita novaReceita;
 
-    public void setModoPreparo(String modoPreparo){
-        this.modoPreparo = modoPreparo;
-    }
-
-    public String getModoPreparo(){
-        return modoPreparo;
-    }
-
-    public boolean getTemAcucar(){
-        return temAcucar;
-    }
-
-    public void setTemAcucar(boolean temAcucar){
-        this.temAcucar = temAcucar;
+    public Opcao(Receita novaReceita){
+        this.novaReceita = novaReceita;
     }
 
     public int getCodigo() {

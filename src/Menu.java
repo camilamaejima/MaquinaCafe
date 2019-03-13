@@ -7,6 +7,7 @@ public class Menu {
     List<Opcao> listaOpcoes = new ArrayList<>();
 
     public String toString(){
+
         listaOpcoes.forEach((opcao) ->{
             System.out.println(opcao);
         });
