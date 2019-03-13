@@ -6,6 +6,15 @@ public class Opcao {
     private String descricao;
     private int codigo;
     private boolean temAcucar;
+    private String modoPreparo;
+
+    public void setModoPreparo(String modoPreparo){
+        this.modoPreparo = modoPreparo;
+    }
+
+    public String getModoPreparo(){
+        return modoPreparo;
+    }
 
     public boolean getTemAcucar(){
         return temAcucar;
