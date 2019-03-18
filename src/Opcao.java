@@ -7,34 +7,27 @@ public class Opcao {
     private int codigo;
     Receita novaReceita;
 
-    public Opcao(Receita novaReceita){
+    public Opcao(Receita novaReceita, String descricao, int codigo, BigDecimal valor ){
         this.novaReceita = novaReceita;
+        this.descricao = descricao;
+        this.codigo = codigo;
+        this.valor = valor;
+
     }
 
     public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
     public BigDecimal getValor() {
         return valor;
-    }
-
-    public void setValor(BigDecimal valor) {
-        this.valor = valor;
     }
 
     public String getDescricao() {
         return descricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
+    @Override
     public String toString(){
         return codigo +" - " + descricao + " - valor R$: " + valor;
 

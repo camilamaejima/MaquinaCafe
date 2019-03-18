@@ -8,17 +8,23 @@ public class Receita {
         listaItens.add(novoItem);
     }
 
+    @Override
     public String toString(){
 
+
         listaItens.forEach((item) ->{
-            if(item.getNomeIngrediente().equals("Açúcar") && item.getQuantidade() == 0) {
+
+            if(item.getCodigoItem() == 6 && item.getQuantidade() == 0) {
                 System.out.println("Sem açúcar!");
+
             }else{
                 System.out.println(item.getComportamento() + " - "
                         + item.getNomeIngrediente()
                         + (item.getQuantidade() != 0 ? " - " + item.getQuantidade() : ""));
             }
+
         });
+
         return "";
     }
 

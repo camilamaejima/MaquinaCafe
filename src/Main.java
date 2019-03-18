@@ -5,51 +5,25 @@ public class Main {
 
     public static void main(String[] args){
 
-
-        //agua
-        ItemReceita itemAgua = new ItemReceita();
-        itemAgua.setNomeIngrediente("Água");
-        itemAgua.setComportamento("Esquenta ");
-        //cafe
-        ItemReceita itemCafe = new ItemReceita();
-        itemCafe.setNomeIngrediente("Café");
-        itemCafe.setComportamento("Passa pelo pó");
-        //chocolate
-        ItemReceita itemChocolate = new ItemReceita();
-        itemChocolate.setNomeIngrediente("Chocolate");
-        itemChocolate.setComportamento("Acrescenta");
-        //cha
-        ItemReceita itemCha = new ItemReceita();
-        itemCha.setNomeIngrediente("Essência Chá");
-        itemCha.setComportamento("Passa por");
-        //leite
-        ItemReceita itemLeite = new ItemReceita();
-        itemLeite.setNomeIngrediente("Leite");
-        itemLeite.setComportamento("Acrescenta");
-        //acucar
-        ItemReceita itemAcucar = new ItemReceita();
-        itemAcucar.setNomeIngrediente("Açúcar");
-        itemAcucar.setComportamento("Acrescenta");
-        itemAcucar.setQuantidade(3);
+        ItemReceita itemAgua = new ItemReceita("Água", "Esquenta", 1);
+        ItemReceita itemCafe = new ItemReceita("Café", "Passa pelo pó", 2);
+        ItemReceita itemChocolate = new ItemReceita("Chocolate", "Acrescenta",3);
+        ItemReceita itemCha = new ItemReceita("Essência chá","Passa por", 4);
+        ItemReceita itemLeite = new ItemReceita("Leite", "Acrescenta", 5);
+        ItemReceita itemAcucar = new ItemReceita("Açúcar", "Acrescenta", 6);
 
         Receita receitaCafe = new Receita();
         receitaCafe.adicionarIngrediente(itemAgua);
         receitaCafe.adicionarIngrediente(itemCafe);
         receitaCafe.adicionarIngrediente(itemAcucar);
-        Opcao cafe = new Opcao(receitaCafe);
-        cafe.setDescricao("Café");
-        cafe.setValor(new BigDecimal(1));
-        cafe.setCodigo(1);
+        Opcao cafe = new Opcao(receitaCafe, "Café", 1, new BigDecimal(1) );
 
         Receita receitaCafeLeite = new Receita();
         receitaCafeLeite.adicionarIngrediente(itemAgua);
         receitaCafeLeite.adicionarIngrediente(itemCafe);
         receitaCafeLeite.adicionarIngrediente(itemLeite);
         receitaCafeLeite.adicionarIngrediente(itemAcucar);
-        Opcao cafeLeite = new Opcao(receitaCafeLeite);
-        cafeLeite.setDescricao("Café com Leite");
-        cafeLeite.setValor(new BigDecimal(1.50));
-        cafeLeite.setCodigo(2);
+        Opcao cafeLeite = new Opcao(receitaCafeLeite, "Café com Leite",2, new BigDecimal(1.50));
 
         Receita receitaCappuccino = new Receita();
         receitaCappuccino.adicionarIngrediente(itemAgua);
@@ -57,26 +31,17 @@ public class Main {
         receitaCappuccino.adicionarIngrediente(itemLeite);
         receitaCappuccino.adicionarIngrediente(itemChocolate);
         receitaCappuccino.adicionarIngrediente(itemAcucar);
-        Opcao cappuccino = new Opcao(receitaCappuccino);
-        cappuccino.setDescricao("Cappuccino");
-        cappuccino.setValor(BigDecimal.valueOf(1.50));
-        cappuccino.setCodigo(3);
+        Opcao cappuccino = new Opcao(receitaCappuccino,"Cappuccino", 3, BigDecimal.valueOf(2) );
 
         Receita receitaCha = new Receita();
         receitaCha.adicionarIngrediente(itemAgua);
         receitaCha.adicionarIngrediente(itemCha);
         receitaCha.adicionarIngrediente(itemAcucar);
-        Opcao cha = new Opcao(receitaCha);
-        cha.setDescricao("Chá");
-        cha.setValor(new BigDecimal(1));
-        cha.setCodigo(4);
+        Opcao cha = new Opcao(receitaCha, "Chá", 4,new BigDecimal(1));
 
         Receita receitaAgua = new Receita();
         receitaAgua.adicionarIngrediente(itemAgua);
-        Opcao agua = new Opcao(receitaAgua);
-        agua.setDescricao("Água");
-        agua.setValor(new BigDecimal(0));
-        agua.setCodigo(5);
+        Opcao agua = new Opcao(receitaAgua,"Água", 5, new BigDecimal(0));
 
         Menu menuNovo = new Menu();
         menuNovo.adicionarOpcao(cafe);

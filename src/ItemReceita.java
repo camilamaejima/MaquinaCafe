@@ -3,6 +3,17 @@ public class ItemReceita {
     private String nomeIngrediente;
     private String comportamento;
     private int quantidade;
+    private int codigoItem;
+
+    public ItemReceita(String nomeIngrediente, String comportamento, int codigoItem){
+        this.nomeIngrediente = nomeIngrediente;
+        this.comportamento = comportamento;
+        this.codigoItem = codigoItem;
+    }
+
+    public int getCodigoItem() {
+        return codigoItem;
+    }
 
     public int getQuantidade() {
         return quantidade;
@@ -16,15 +27,8 @@ public class ItemReceita {
         return nomeIngrediente;
     }
 
-    public void setNomeIngrediente(String nomeIngrediente) {
-        this.nomeIngrediente = nomeIngrediente;
-    }
-
     public String getComportamento() {
         return comportamento;
     }
 
-    public void setComportamento(String comportamento) {
-        this.comportamento = comportamento;
-    }
 }
