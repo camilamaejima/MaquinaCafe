@@ -1,3 +1,7 @@
+package br.com.bluesoft.maquina.menu;
+
+import br.com.bluesoft.maquina.receita.Receita;
+
 import java.math.BigDecimal;
 
 public class Opcao {
@@ -5,15 +9,15 @@ public class Opcao {
     private BigDecimal valor;
     private String descricao;
     private int codigo;
-    Receita novaReceita;
+    public Receita novaReceita;
 
     public Opcao(Receita novaReceita, String descricao, int codigo, BigDecimal valor ){
         this.novaReceita = novaReceita;
         this.descricao = descricao;
         this.codigo = codigo;
         this.valor = valor;
-
     }
+
 
     public int getCodigo() {
         return codigo;
@@ -21,10 +25,6 @@ public class Opcao {
 
     public BigDecimal getValor() {
         return valor;
-    }
-
-    public String getDescricao() {
-        return descricao;
     }
 
     @Override
