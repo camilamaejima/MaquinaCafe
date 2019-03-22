@@ -7,6 +7,7 @@ import br.com.bluesoft.maquina.menu.Opcao;
 import br.com.bluesoft.maquina.receita.ItemReceita;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -16,24 +17,45 @@ public class MaquinaCafe {
     Opcao opcaoEscolhida;
     Estoque novoEstoque;
 
-    public void confereEstoque(){
+    public MaquinaCafe(Menu novoMenu, Estoque novoEstoque){
+        this.novoMenu = novoMenu;
+        this.novoEstoque = novoEstoque;
+    }
 
-        for (ItemReceita listaItem : opcaoEscolhida.novaReceita.listaItens) {
-            boolean temEstoque;
-            int codigoItemReceita = listaItem.getCodigoItem();
-            int quantidadeReceita = listaItem.getQuantidade();
-            temEstoque = novoEstoque.verificaQuantidade(codigoItemReceita, quantidadeReceita);
-            if(!temEstoque){
-                throw new RuntimeException("Não há ingrediente(s) suficiente(s) para o pedido!");
+    public ArrayList<Opcao> confereEstoque(){
+        ArrayList<Opcao> menuOpcoesEstoque = new ArrayList<>();
+        for (Opcao listaOpcoe : novoMenu.listaOpcoes) {
+            boolean temEstoque = false;
+            for (ItemReceita listaIten : listaOpcoe.novaReceita.listaItens) {
+                int quantidadeReceita = listaIten.getQuantidade();
+                int codigoReceita = listaIten.getCodigoItem();
+                temEstoque = novoEstoque.verificaQuantidade(codigoReceita, quantidadeReceita);
+                if(!temEstoque){
+                    break;
+                }
             }
+            if(temEstoque){
+                menuOpcoesEstoque.add(listaOpcoe);
+            }
+        }
+        return menuOpcoesEstoque;
+    }
+
+    public void confereAcucarEstoque(int quantidadeAcucar){
+        boolean temEstoqueAcucar = novoEstoque.verificaQuantidade(5,quantidadeAcucar);
+        if(!temEstoqueAcucar){
+            throw new RuntimeException("Não há ingrediente(s) suficiente(s) para o pedido!");
         }
     }
 
     public void retiraItemEstoque(){
-        for (ItemReceita listaItem : opcaoEscolhida.novaReceita.listaItens) {
+
+       for (ItemReceita listaItem : opcaoEscolhida.novaReceita.listaItens) {
             int codigoItemReceita = listaItem.getCodigoItem();
             int quantidadeReceita = listaItem.getQuantidade();
-            novoEstoque.removerQuantidadeEstoque(quantidadeReceita, codigoItemReceita);
+            if(codigoItemReceita != 7){
+                novoEstoque.removerQuantidadeEstoque(quantidadeReceita, codigoItemReceita);
+            }
         }
     }
 
@@ -51,6 +73,11 @@ public class MaquinaCafe {
     }
 
     public boolean desligaMaquina(){
+        boolean confereEstoqueObrigatorio = novoEstoque.verificaSeTemItensObrigatorios();
+        if(!confereEstoqueObrigatorio){
+            System.out.println("Máquina desligada, sem estoque!");
+            return false;
+        }
         System.out.print("Deseja desligar a máquina (S/N) ? ");
         Scanner sc = new Scanner(System.in);
         String resposta = sc.next();
@@ -66,33 +93,48 @@ public class MaquinaCafe {
         return true;
     }
 
-    public MaquinaCafe(Menu novoMenu, Estoque novoEstoque){
-        this.novoMenu = novoMenu;
-        this.novoEstoque = novoEstoque;
-    }
-
     public void iniciaMaquina(){
-        System.out.print("Máquina de Café - sem estoque de ingredientes, deseja inserir ingredientes (S/N) ? ");
-        Scanner sc = new Scanner(System.in);
-        String resposta = sc.next();
+        boolean temEstoqueObrigatorio = novoEstoque.verificaSeTemItensObrigatorios();
+        boolean temEstoque = novoEstoque.verificaUmItemNaoObrigatorioTemEstoque();
 
-        if(resposta.equalsIgnoreCase("n")){
-            iniciaMaquina();
+        if(!temEstoqueObrigatorio || !temEstoque){
+            System.out.println("Máquina de café sem estoque, por favor insira estoque.");
+            inserirEstoque();
+        }else {
+            System.out.print("Máquina de café pronta para uso, deseja inserir mais ingredientes ? (S/N)");
+            Scanner sc = new Scanner(System.in);
+            String resposta = sc.next();
+
+            if(resposta.equalsIgnoreCase("s")){
+                inserirEstoque();
+            }else{
+                return;
+            }
         }
     }
 
     public void inserirEstoque(){
         for (ItemEstoque listaItem : novoEstoque.listaItens) {
-            System.out.print("Insira o valor de estoque para " + listaItem.getNomeItem() +" : ");
-            Scanner sc = new Scanner(System.in);
-            int valorEstoque = sc.nextInt();
-            listaItem.setQuantidadeEstoque(valorEstoque);
+            if(listaItem.getCodigoItem() != 7){
+                System.out.print("Insira o valor de estoque para " + listaItem.getNomeItem() +" : ");
+                Scanner sc = new Scanner(System.in);
+                int valorEstoque = sc.nextInt();
+                listaItem.addQuantidadeEstoque(valorEstoque);
+            }
+        }
+        boolean temEstoqueSuficienteObrigatorio = novoEstoque.verificaSeTemItensObrigatorios();
+        if(!temEstoqueSuficienteObrigatorio){
+            System.out.println("Os estoques inseridos são insuficientes, insira novamente.");
+            inserirEstoque();
         }
     }
 
     public void mostraMenu(){
         System.out.println("Máquina de café - Menu");
-        System.out.println(this.novoMenu);
+        ArrayList<Opcao> menuOpcoesEstoque = confereEstoque();
+        for (Opcao opcao : menuOpcoesEstoque) {
+            System.out.println(opcao);
+        }
     }
 
     public void esperaAteAlguemSelecionarUmaOpcao(){
@@ -100,7 +142,8 @@ public class MaquinaCafe {
 
         Scanner sc = new Scanner(System.in);
         int codigoEscolhido = sc.nextInt();
-        Optional<Opcao> opcaoEscolhida = novoMenu.buscaOpcaoPorCodigo(codigoEscolhido);
+        ArrayList<Opcao> menuOpcoesEstoque = confereEstoque();
+        Optional<Opcao> opcaoEscolhida = novoMenu.buscaOpcaoPorCodigo(codigoEscolhido, menuOpcoesEstoque);
 
         if(opcaoEscolhida.isPresent()){
             this.opcaoEscolhida = opcaoEscolhida.get();
@@ -116,12 +159,12 @@ public class MaquinaCafe {
             int codigoItem = listaItem.getCodigoItem();
             if(codigoItem == 5){
                 int novoNivel = mostrarOpcoesAcucar();
+                confereAcucarEstoque(novoNivel);
                 if(novoNivel >= 0){
                     listaItem.setQuantidade(novoNivel);
                 }
             }
         }
-        confereEstoque();
     }
 
     public int mostrarOpcoesAcucar(){

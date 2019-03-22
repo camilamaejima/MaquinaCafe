@@ -7,6 +7,24 @@ public class Estoque {
 
     public List<ItemEstoque> listaItens = new ArrayList<>();
 
+    public boolean verificaSeTemItensObrigatorios(){
+        for (ItemEstoque listaIten : listaItens) {
+            if(listaIten.isItemObrigatorio() == true && listaIten.getQuantidadeEstoque() >= listaIten.getQuantidadeEstoqueMinimo()){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean verificaUmItemNaoObrigatorioTemEstoque(){
+        for (ItemEstoque listaIten : listaItens) {
+            if(listaIten.isItemObrigatorio() == false && listaIten.getQuantidadeEstoque() >= listaIten.getQuantidadeEstoqueMinimo()){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void adicionarItemEstoque(ItemEstoque novoItem){
         listaItens.add(novoItem);
     }
@@ -25,14 +43,13 @@ public class Estoque {
         return true;
     }
 
-    public void removerQuantidadeEstoque(int quantidadeRemocao, int codigoItem){
 
+    public void removerQuantidadeEstoque(int quantidadeRemocao, int codigoItem){
         for (ItemEstoque listaItem : listaItens) {
             if(codigoItem == listaItem.getCodigoItem()) {
-                int resultado = listaItem.getQuantidadeEstoque() - quantidadeRemocao;
-                listaItem.setQuantidadeEstoque(resultado);
-
+                listaItem.removerQuantidadeEstoque(quantidadeRemocao, listaItem.getCodigoItem());
             }
         }
     }
+
 }

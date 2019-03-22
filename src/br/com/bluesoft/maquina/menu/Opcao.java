@@ -28,9 +28,8 @@ public class Opcao {
     }
 
     @Override
-    public String toString(){
-        return codigo +" - " + descricao + " - valor R$: " + valor;
-
+    public String toString() {
+        return codigo + " - " + descricao + " - valor R$: " + valor;
     }
 
 }

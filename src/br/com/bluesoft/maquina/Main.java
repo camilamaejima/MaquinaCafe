@@ -12,14 +12,15 @@ import java.math.BigDecimal;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String args[]){
 
-        ItemEstoque poCafeEstoque = new ItemEstoque(1, "Pó de café", 0);
-        ItemEstoque chocolateEstoque = new ItemEstoque(2,"Chocolate", 0);
-        ItemEstoque chaEstoque = new ItemEstoque(3, "Essência de chá", 0);
-        ItemEstoque leiteEstoque = new ItemEstoque(4, "Leite", 0);
-        ItemEstoque acucarEstoque = new ItemEstoque(5,"Açúcar", 0);
-        ItemEstoque xicaraEstoque = new ItemEstoque(6, "Xícara", 0);
+        ItemEstoque poCafeEstoque = new ItemEstoque(1, "Pó de café", 0,1, false);
+        ItemEstoque chocolateEstoque = new ItemEstoque(2,"Chocolate", 0,1, false);
+        ItemEstoque chaEstoque = new ItemEstoque(3, "Essência de chá", 0,1, false);
+        ItemEstoque leiteEstoque = new ItemEstoque(4, "Leite", 0,1, false);
+        ItemEstoque acucarEstoque = new ItemEstoque(5,"Açúcar", 0,3, false);
+        ItemEstoque copoEstoque = new ItemEstoque(6, "Copo", 0,1, true);
+        ItemEstoque aguaEstoque = new ItemEstoque(7, "Água", 0,1, true);
 
         Estoque novoEstoque = new Estoque();
         novoEstoque.adicionarItemEstoque(poCafeEstoque);
@@ -27,7 +28,8 @@ public class Main {
         novoEstoque.adicionarItemEstoque(chaEstoque);
         novoEstoque.adicionarItemEstoque(leiteEstoque);
         novoEstoque.adicionarItemEstoque(acucarEstoque);
-        novoEstoque.adicionarItemEstoque(xicaraEstoque);
+        novoEstoque.adicionarItemEstoque(copoEstoque);
+        novoEstoque.adicionarItemEstoque(aguaEstoque);
 
         ItemReceita itemCafe = new ItemReceita("Pó de Café", "Passa pelo filtro o", 1, 1);
         ItemReceita itemChocolate = new ItemReceita("Chocolate", "Acrescenta ",2, 1);
@@ -85,19 +87,17 @@ public class Main {
 
         boolean desliga = true;
         maquinaCafe.iniciaMaquina();
-        maquinaCafe.inserirEstoque();
         maquinaCafe.ligaMaquina();
         while (desliga){
             maquinaCafe.mostraMenu();
             maquinaCafe.esperaAteAlguemSelecionarUmaOpcao();
             try{
-                maquinaCafe.confereEstoque();
                 maquinaCafe.alterarNivelAcucar();
             }catch (Exception e){
                 System.out.println(e.getMessage());
+                maquinaCafe.alterarNivelAcucar();
                 return;
             }
-
             maquinaCafe.mostrarPreco();
             maquinaCafe.cobrar();
             maquinaCafe.retiraItemEstoque();

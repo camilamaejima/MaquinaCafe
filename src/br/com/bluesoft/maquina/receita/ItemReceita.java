@@ -17,10 +17,6 @@ public class ItemReceita extends Item {
         return comportamento;
     }
 
-    public void setComportamento(String comportamento) {
-        this.comportamento = comportamento;
-    }
-
     public int getQuantidade() {
         return quantidade;
     }
