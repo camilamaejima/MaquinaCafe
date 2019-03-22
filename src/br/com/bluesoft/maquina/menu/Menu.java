@@ -1,10 +1,12 @@
+package br.com.bluesoft.maquina.menu;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class Menu {
 
-    List<Opcao> listaOpcoes = new ArrayList<>();
+    public List<Opcao> listaOpcoes = new ArrayList<>();
 
     public String toString(){
 
@@ -18,9 +20,9 @@ public class Menu {
         listaOpcoes.add(opcaoLista);
     }
 
-    public Optional<Opcao> buscaOpcaoPorCodigo(int codigo){
+    public Optional<Opcao> buscaOpcaoPorCodigo(int codigo, ArrayList<Opcao> listaEstoque){
 
-        Optional<Opcao> opcaoEscolhida = listaOpcoes.stream()
+        Optional<Opcao> opcaoEscolhida = listaEstoque.stream()
                 .filter(opcao -> opcao.getCodigo() == codigo)
                 .findFirst();
 

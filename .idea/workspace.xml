@@ -3,16 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="119eac0f-c27a-4e96-b394-e3b7d13b2248" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/MaquinaCafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/MaquinaCafe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/NivelAcucar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/Opcao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/Opcao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MaquinaCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaquinaCafe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NivelAcucar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Opcao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Opcao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/MaquinaCafe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/MaquinaCafe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/estoque/Estoque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/estoque/Estoque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/estoque/ItemEstoque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/estoque/ItemEstoque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/receita/ItemReceita.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaquinaCafe/br/com/bluesoft/maquina/receita/ItemReceita.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/MaquinaCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/MaquinaCafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/ItemEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/ItemEstoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Opcao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Opcao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/ItemReceita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/ItemReceita.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,90 +26,125 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MaquinaCafe.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+            <state relative-caret-position="133">
+              <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Receita.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/MaquinaCafe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="124">
+              <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ItemReceita.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/Estoque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding>
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#189#190#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="196">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Opcao.java">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/ItemEstoque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="373">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding>
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Opcao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/Receita.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/ItemReceita.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,6 +159,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>opcaoEscolhida</find>
+      <find>scolha uma opç</find>
+      <find>insira o valor</find>
+      <find>Menu&quot;</find>
+      <find>desli&quot;</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -129,14 +176,26 @@
       <list>
         <option value="$PROJECT_DIR$/src/teste.java" />
         <option value="$PROJECT_DIR$/src/NivelAcucar.java" />
-        <option value="$PROJECT_DIR$/src/Menu.java" />
         <option value="$PROJECT_DIR$/src/Ingredientes.java" />
         <option value="$PROJECT_DIR$/src/Ingrediente.java" />
+        <option value="$PROJECT_DIR$/src/Menu.java" />
         <option value="$PROJECT_DIR$/src/Opcao.java" />
+        <option value="$PROJECT_DIR$/src/Item.java" />
+        <option value="$PROJECT_DIR$/src/ItemEstoque.java" />
         <option value="$PROJECT_DIR$/src/ItemReceita.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Receita.java" />
         <option value="$PROJECT_DIR$/src/MaquinaCafe.java" />
+        <option value="$PROJECT_DIR$/src/Estoque.java" />
+        <option value="$PROJECT_DIR$/src/Receita.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/Item.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/ItemReceita.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Opcao.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/Receita.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Menu.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/Estoque.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/ItemEstoque.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/Main.java" />
+        <option value="$PROJECT_DIR$/src/br/com/bluesoft/maquina/MaquinaCafe.java" />
       </list>
     </option>
   </component>
@@ -151,6 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,16 +223,41 @@
               <item name="MaquinaCafe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MaquinaCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaquinaCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="maquina" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaquinaCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaquinaCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="maquina" type="462c0819:PsiDirectoryNode" />
+              <item name="estoque" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaquinaCafe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaquinaCafe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="maquina" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552515999158" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553258273939" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.bluesoft.maquina" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -188,11 +273,18 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="br.com.bluesoft.maquina.Main" />
       <module name="MaquinaCafe" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.bluesoft.maquina.menu.Menu" />
+      <module name="MaquinaCafe" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,10 +299,12 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.teste" />
+      <item itemvalue="Application.Menu" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Menu" />
         <item itemvalue="Application.teste" />
       </list>
     </recent_temporary>
@@ -241,45 +335,36 @@
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989429" visible="true" weight="0.19241774" />
-      <window_info id="Structure" order="1" sideWeight="0.5010571" side_tool="true" visible="true" weight="0.19241774" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32907802" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4966443" visible="true" weight="0.19527897" />
+      <window_info id="Structure" order="1" sideWeight="0.5033557" side_tool="true" visible="true" weight="0.19527897" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36595744" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/teste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teste.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -294,112 +379,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ingredientes.java">
+    <entry file="file://$PROJECT_DIR$/src/Ingredientes.java" />
+    <entry file="file://$PROJECT_DIR$/src/Ingrediente.java" />
+    <entry file="file://$PROJECT_DIR$/src/NivelAcucar.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="328">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ingrediente.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="142">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="3857" column="20" lean-forward="true" selection-start-line="3857" selection-start-column="20" selection-end-line="3857" selection-end-column="20" />
           <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#178785#178786#0" expanded="true" />
+            <element signature="e#178832#178833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/Receita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/menu/Opcao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/receita/ItemReceita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/Estoque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
             <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Opcao.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/estoque/ItemEstoque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="373">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NivelAcucar.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/MaquinaCafe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="124">
+          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Receita.java">
+    <entry file="file://$PROJECT_DIR$/src/br/com/bluesoft/maquina/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="133">
+          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItemReceita.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MaquinaCafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
           </folding>
         </state>
       </provider>

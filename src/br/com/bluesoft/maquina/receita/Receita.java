@@ -1,24 +1,32 @@
+package br.com.bluesoft.maquina.receita;
+
+import br.com.bluesoft.maquina.receita.ItemReceita;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Receita {
-    List<ItemReceita> listaItens = new ArrayList<>();
+    public List<ItemReceita> listaItens = new ArrayList<>();
 
-    public void adicionarIngrediente(ItemReceita novoItem){
+    public void adicionarItem(ItemReceita novoItem){
         listaItens.add(novoItem);
     }
 
+    @Override
     public String toString(){
 
         listaItens.forEach((item) ->{
-            if(item.getNomeIngrediente().equals("Açúcar") && item.getQuantidade() == 0) {
+
+            if(item.getCodigoItem() == 6 && item.getQuantidade() == 0) {
                 System.out.println("Sem açúcar!");
+
             }else{
                 System.out.println(item.getComportamento() + " - "
-                        + item.getNomeIngrediente()
+                        + item.getNomeItem()
                         + (item.getQuantidade() != 0 ? " - " + item.getQuantidade() : ""));
             }
         });
+
         return "";
     }
 
